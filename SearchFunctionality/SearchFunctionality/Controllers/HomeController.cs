@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using SearchFunctionality.Models;
+using PagedList.Mvc;
+using PagedList;
 
 namespace SearchFunctionality.Controllers
 {
@@ -15,15 +17,15 @@ namespace SearchFunctionality.Controllers
         private SampleDbContext db = new SampleDbContext();
 
         // GET: Home
-        public ActionResult Index(string searchBy, string search)
+        public ActionResult Index(string searchBy, string search, int? page)
         {
             if (searchBy == "Gender")
             {
-                return View(db.tblEmployees.Where(x => x.Gender == search || search == null).ToList());
+                return View(db.tblEmployees.Where(x => x.Gender == search || search == null).ToList().ToPagedList(page?? 1,3));
             }
             else
             {
-                return View(db.tblEmployees.Where(x => x.Name.StartsWith(search) || search == null).ToList());
+                return View(db.tblEmployees.Where(x => x.Name.StartsWith(search) || search == null).ToList().ToPagedList(page ?? 1, 3));
             }
             
         }

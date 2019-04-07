@@ -92,3 +92,8 @@ C:\Users\Rachit\source\repos\SearchFunctionality\SearchFunctionality\obj\Debug\S
 C:\Users\Rachit\source\repos\SearchFunctionality\SearchFunctionality\obj\Debug\SearchFunctionality.csproj.CopyComplete
 C:\Users\Rachit\source\repos\SearchFunctionality\SearchFunctionality\obj\Debug\SearchFunctionality.dll
 C:\Users\Rachit\source\repos\SearchFunctionality\SearchFunctionality\obj\Debug\SearchFunctionality.pdb
+C:\Users\Rachit\source\repos\SearchFunctionality\SearchFunctionality\bin\PagedList.dll
+C:\Users\Rachit\source\repos\SearchFunctionality\SearchFunctionality\bin\PagedList.Mvc.dll
+C:\Users\Rachit\source\repos\SearchFunctionality\SearchFunctionality\bin\PagedList.xml
+C:\Users\Rachit\source\repos\SearchFunctionality\SearchFunctionality\bin\PagedList.Mvc.xml
+C:\Users\Rachit\source\repos\SearchFunctionality\SearchFunctionality\obj\Debug\SearchFunctionality.csprojAssemblyReference.cache
