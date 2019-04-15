@@ -11,12 +11,15 @@ namespace Vidly.Controllers
     public class MoviesController : Controller
     {
         // GET: Movies
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
+        public ActionResult Index()
+        {
+            List<Movie> movies = GetMovies();
+            return View(movies);
+            
+        }
 
         // GET: Movies
+        [HttpPost]
         public ActionResult Index(int? pageIndex, string sortBy)
         {
             if (!pageIndex.HasValue)
@@ -26,7 +29,7 @@ namespace Vidly.Controllers
             
             return Content( string.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy) );
         }
-
+       
         public ActionResult Random()
         {
             var movie = new Movie() { Name = "Shrek!" };
@@ -51,6 +54,28 @@ namespace Vidly.Controllers
            
             return Content(year + "/" + month);
         }
-        
+
+        public ActionResult Details(int id)
+        {
+            var movies = GetMovies().SingleOrDefault(x => x.Id == id);
+            if (movies == null)
+                return Content("No movies matching the search result was found");
+
+            return View(movies);
+        }
+
+        private List<Movie> GetMovies()
+        {
+            List<Movie> movies = new List<Movie>
+            {
+                new Movie { Id = 1 , Name = "GOT"},
+                new Movie { Id = 2 , Name = "BB"}
+            };
+
+            return movies;
+        }
+
+
+
     }
 }
