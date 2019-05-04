@@ -18,27 +18,58 @@
 else
 {
 
-<table  class="table table-bordered table-hover">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.ActionLink(item.Name,"Details","Customers", new {id = item.Id },null)
-            </td>
-            @*<td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>*@
-        </tr>
-    }   
-
+    <table id="customers" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.ActionLink(item.Name, "Edit", "Customers", new { id = item.Id }, null)
+                        </td>
+                        @*<td>            @item.MembershipType.Name        </td>*@
+                        @*<td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>*@
+                        <td>
+                            <button data-customer-id="@item.Id" class="btn-link js-delete">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
 </table>
+}
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+           // $("#customers").DataTable(); optimization vdo 81
+            var table = $("#customers").DataTable();
+            //Get to the cusomers table and find all the elements with this class js-delete
+           // $("#customers .js-delete").on("click", function () { commented and writing optimized code
+            $("#customers").on("click", ".js-delete",function () {
+                var button = $(this);
+                if (confirm("Are u sure")) {
+                    $.ajax({
+                        url: "/api/customers/" + button.attr("data-customer-id"),
+                        method: "DELETE",
+                        success: function () {
+                            table.row(button.parents("tr")).remove.draw();
+                            // button.parents("tr").remove; vdo 81
+                        }
+                    });
+                }
+            });
+        });
+    </script>    
 }

@@ -6,30 +6,65 @@
 }
 
 <h2>Index</h2>
-
+@*Rachit*@
+@*@Html.ActionLink("your text", "actionName", "controllerName")*@
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("New Movie", "Save", "Movies", null, new { @class = "btn btn-primary btn-large" })
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-            @Html.ActionLink(item.Name, "Details", "Movies", new { id = item.Id }, null)
-        </td>
-        @*<td>
+<table id="movies"  class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Name)*@
+                @Html.ActionLink(item.Name, "Edit", "Movies", new { id = item.Id }, null)
+            </td>
+            @*<td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>*@
-    </tr>
-}
+            <td>
+                <button data-movie-id="@item.Id" class="btn-link js-delete">Delete</button>
+            </td>
+        </tr>
+        }
+
+    </tbody>
 
 </table>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+           // $("#customers").DataTable(); optimization vdo 81
+            var table = $("#movies").DataTable();
+            //Get to the cusomers table and find all the elements with this class js-delete
+           // $("#customers .js-delete").on("click", function () { commented and writing optimized code
+            $("#movies").on("click", ".js-delete",function () {
+                var button = $(this);
+                if (confirm("Are u sure")) {
+                    $.ajax({
+                        url: "/Movies/Index/" + button.attr("data-movie-id"),
+                        data: "data",
+                        success: function () {
+                            table.row(button.parents("tr")).remove.draw();
+                            // button.parents("tr").remove; vdo 81
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}
