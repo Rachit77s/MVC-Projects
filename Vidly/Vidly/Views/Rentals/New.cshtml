@@ -7,10 +7,10 @@
 <h2>New Rental Form</h2>
 
 
-<form>
+<form id="newRental">
     <div class="form-group">
         <label>Customer</label>
-        <input id="customer" type="text" value="" class="form-control" />
+        <input name="CustomerName" id="customer" type="text" value="" class="form-control" />
     </div>
 
     <div class="form-group">
@@ -25,7 +25,11 @@
 @section scripts
 {
     <script>
+        debugger
         $(document).ready(function () {
+
+            var vm = {'Customer': 'hangover'};
+
             var customers = new Bloodhound({
                 datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name '),
                 queryTokenizer: Bloodhound.tokenizers.whitespace,
@@ -38,12 +42,32 @@
 
             $('#customer').typeahead({
                 minLength: 3,
-                highlight: true     
+                highlight: true
             }, {
-                name: 'customers',
-                display: 'name',
+                    name: 'customers',
+                    display: 'name',
                     source: customers //bloodhound object
-            });
+                }).on("typeahead:select", function (e, customer) {
+                    vm.customerId = customer.id;
+               
+                });
+
+            $("#newRental").submit(function (e) {
+                debugger
+                e.preventDefault();
+
+                $.ajax({
+                    url: "/api/newRentals",
+                    method: "post",
+                    data: vm
+                })
+                    .done(function () {
+                        console.log("done");
+                    })
+                    .fail(function () {
+
+                    });
+            })
         });
     </script>
 
