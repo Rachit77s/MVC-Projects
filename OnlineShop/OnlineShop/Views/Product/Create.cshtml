@@ -1,0 +1,190 @@
+﻿@model OnlineShop.ViewModels.ProductCategoryViewModel
+
+@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@using (Ajax.BeginForm("Create", "Product", new AjaxOptions
+{
+    HttpMethod = "POST",
+    OnSuccess = "OnSuccess",
+    OnFailure = "OnFailure",
+    LoadingElementId = "progress"
+}))
+
+{
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.ProductName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Products.CategoryID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @* Select the CategoryID from Model class and CategoryName property from the model class *@
+                @* As a second argument Supply a list of items for the dropdown list so pass new SelectList(), As 1st arg provide list of items i.e Category from ViewModel, 2nd arg name of the property in ViewModel which contains ID of the items and 3rd Arg which contains name of the item *@
+                @if (Model != null)
+                {
+                    @Html.DropDownListFor(m => m.Products.CategoryID, new SelectList(Model.Category, "CategoryID", "CategoryName"), "Select Category", new { @id = "myid", @class = "form-control" })
+                }
+
+                @Html.ValidationMessageFor(m => m.Products.CategoryID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.QuantityPerUnit, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.QuantityPerUnit, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.QuantityPerUnit, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.UnitPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.UnitPrice, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.UnitPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.UnitsInStock, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.UnitsInStock, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.UnitsOnOrder, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.UnitsOnOrder, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.UnitsOnOrder, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        @Html.HiddenFor(m => m.Products.ProductID)
+        <button type="submit" class="btn btn-primary">Save</button>
+
+    </div>
+
+}
+
+
+
+<div id="progress" class="modal">
+    <div class="center">
+        <img src="~/Images/loader4.gif" />
+    </div>
+</div>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+<script type="text/javascript">
+    function OnSuccess(response) {
+        debugger
+        //var message = "Person Id: " + response.PersonId;
+        //message += "\nName: " + response.Name;
+        //message += "\nGender: " + response.Gender;
+        //message += "\nCity: " + response.City;
+        //alert(message);
+        alert('Successfully Submitted');
+    }
+    function OnFailure(response) {
+        alert("Error occured.");
+    }
+</script>
+
+
+@*@using (Html.BeginForm("Create", "Product", FormMethod.Post))
+{
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.ProductName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Products.CategoryID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+
+                @Html.DropDownListFor(m => m.Products.CategoryID, new SelectList(Model.Category, "CategoryID", "CategoryName"), "Select Category", new { @id = "myid", @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Products.CategoryID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.QuantityPerUnit, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.QuantityPerUnit, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.QuantityPerUnit, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.UnitPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.UnitPrice, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.UnitPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.UnitsInStock, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.UnitsInStock, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Products.UnitsOnOrder, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Products.UnitsOnOrder, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Products.UnitsOnOrder, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        @Html.HiddenFor(m => m.Products.ProductID)
+        <button type="submit" class="btn btn-primary">Save</button>
+
+    </div>
+
+}*@
+
+
+
+
+@*<div class="col-md-10">
+    @* Select the CategoryID from Model class and CategoryName property from the model class *@
+    @*@Html.DropDownListFor(m => m.Products.CategoryID, new SelectList(Model.Category, "CategoryID", "CategoryName"), "Select Category", new { @id = "myid", @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Products.CategoryID, "", new { @class = "text-danger" })
+</div>*@
