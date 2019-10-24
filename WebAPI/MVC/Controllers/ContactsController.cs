@@ -19,7 +19,7 @@ namespace MVC.Controllers
 
             return View(contactList);
         }
-        public ActionResult AddOrEdit(int id =0)
+        public ActionResult AddOrEdit(int id = 0)
         {
             return View();
         }
@@ -64,5 +64,26 @@ namespace MVC.Controllers
         }
 
 
-}
+        public ActionResult Edit(int id)
+        {
+            HttpResponseMessage response = GlobalVariables.WebApiClient.GetAsync("Contacts/" + id.ToString()).Result;
+            return View(response.Content.ReadAsAsync<ContactModel>().Result);
+        }
+
+        // POST: ContactModels/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, ContactModel contactModel)
+        {
+
+            HttpResponseMessage response = GlobalVariables.WebApiClient.PutAsJsonAsync("Contacts/" + id.ToString(), contactModel).Result;
+
+            return RedirectToAction("Index");
+
+        }
+
+
+    }
 }

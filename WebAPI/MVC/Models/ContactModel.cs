@@ -11,9 +11,11 @@ namespace MVC.Models
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter the First name")]
+        [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Use letters only please")]
         public string FirstName { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter the Last name")]
+        [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Use letters only please")]
         public string LastName { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter the Email Address")]
@@ -26,6 +28,7 @@ namespace MVC.Models
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter the phone number")]
         [StringLength(maximumLength: 10, MinimumLength = 10, ErrorMessage = "Length must be 10")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Phone number must be numeric")]
         public string PhoneNumber { get; set; }
         //public Nullable<bool> Status { get; set; }
         public bool Status { get; set; }
