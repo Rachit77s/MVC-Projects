@@ -153,3 +153,4 @@ C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.csproj
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.csproj.CopyComplete
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.pdb
+C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.csprojAssemblyReference.cache

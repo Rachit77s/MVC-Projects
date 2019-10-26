@@ -19,18 +19,8 @@ namespace MVC.Controllers
 
             return View(contactList);
         }
-        public ActionResult AddOrEdit(int id = 0)
-        {
-            return View();
-        }
 
-        [HttpPost]
-        public ActionResult AddOrEdit()
-        {
-            return View();
-        }
-
-
+     
         // GET: ContactModels/Create
         public ActionResult Create()
         {
@@ -48,9 +38,8 @@ namespace MVC.Controllers
             {
                 try
                 {
-                    // _Icontact.Insert(contactModel);
-                    //_Icontact.Save();
                     HttpResponseMessage response = GlobalVariables.WebApiClient.PostAsJsonAsync("Contacts", contactModel).Result;
+                    TempData["SuccessMessage"] = "Saved Successfully";
                     return RedirectToAction("Index");
 
                 }
@@ -77,13 +66,29 @@ namespace MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, ContactModel contactModel)
         {
+            if (ModelState.IsValid)
+            {
+                HttpResponseMessage response = GlobalVariables.WebApiClient.PutAsJsonAsync("Contacts/" + id.ToString(), contactModel).Result;
+                TempData["SuccessMessage"] = "Updated Successfully";
+            }
+            else
+            {
 
-            HttpResponseMessage response = GlobalVariables.WebApiClient.PutAsJsonAsync("Contacts/" + id.ToString(), contactModel).Result;
+            }
+               
 
             return RedirectToAction("Index");
 
         }
 
 
+
+        public ActionResult Delete(int id)
+        {
+            HttpResponseMessage response = GlobalVariables.WebApiClient.DeleteAsync("Contacts/" + id.ToString()).Result;
+            TempData["SuccessMessage"] = "Deleted Successfully";
+            return RedirectToAction("Index");
+
+        }
     }
 }

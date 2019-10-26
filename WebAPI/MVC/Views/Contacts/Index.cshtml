@@ -49,11 +49,42 @@
             @*@Html.CheckBoxFor(modelItem => item.Status, new { @class = "custom-checkbox" })*@
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @*@Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "event.preventDefault();  Delete(@item.Id);" })*@
+
+            @*@Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "return confirm('Are you sure?');" })*@
+
+            @*@Html.ActionLink("Delete", "Delete", "Contacts", new { id = item.Id }, new { onclick = "event.preventDefault();Delete(id);  return false;" })*@
+
+            @Html.ActionLink("Delete", "Delete", "Contacts", new { id = item.Id },new {@class="myClass"})
+
+            <a onclick="Delete(@item.Id)"> Delete2</a>
         </td>
     </tr>
 }
 
 </table>
+
+
+@section scripts{
+    <script>
+        $(function () {
+            var successMessage = '@TempData["SuccessMessage"]'
+            if (successMessage != '')
+                alertify.success(successMessage);
+        });
+
+        function Delete(id) {
+            debugger
+            alertify.confirm('Evolent Health', 'Are You Sure To Delete This Record?', function () {
+                window.location.href = '@Url.Action("Delete", "Contacts")/' + id;
+            }, null);
+        }
+
+        $('.myClass').click(function() { alertify.confirm('Evolent Health', 'Are You Sure To Delete This Record?', function () {
+                window.location.href = '@Url.Action("Delete", "Contacts")/' + id;
+            }, null); });
+
+    </script>
+}

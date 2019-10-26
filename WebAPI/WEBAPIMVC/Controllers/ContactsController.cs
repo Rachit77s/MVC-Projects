@@ -64,8 +64,7 @@ namespace WEBAPIMVC.Controllers
             {
                 return BadRequest();
             }
-
-            //db.Entry(contact).State = EntityState.Modified;          
+    
 
             try
             {
@@ -113,9 +112,6 @@ namespace WEBAPIMVC.Controllers
             {
                 return NotFound();
             }
-
-            //db.Contacts.Remove(contact);
-            //db.SaveChanges();
 
             _Icontact.Delete(id);
 
