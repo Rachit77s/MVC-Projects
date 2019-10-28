@@ -50,16 +50,22 @@
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-            @*@Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "event.preventDefault();  Delete(@item.Id);" })*@
+            @*@Html.ActionLink("Details", "Details", new { id = item.Id }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "event.preventDefault();  Delete(@item.Id);" })
 
             @*@Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "return confirm('Are you sure?');" })*@
 
             @*@Html.ActionLink("Delete", "Delete", "Contacts", new { id = item.Id }, new { onclick = "event.preventDefault();Delete(id);  return false;" })*@
 
-            @Html.ActionLink("Delete", "Delete", "Contacts", new { id = item.Id },new {@class="myClass"})
+            @*@Html.ActionLink("Delete", "Delete", "Contacts", new { id = item.Id },new {@class="myClass"})*@
 
-            <a onclick="Delete(@item.Id)"> Delete2</a>
+            @*@Ajax.ActionLink("Delete",
+                 "Delete",
+                 new { id = item.Id },
+                 new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace },
+                 new { onclick = "Delete(@item.Id)" })*@
+
+            <a onclick="Delete(@item.Id)"> Delete5</a>
         </td>
     </tr>
 }

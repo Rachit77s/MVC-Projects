@@ -76,6 +76,7 @@ C:\Users\Rachit\source\repos\WebAPI\MVC\obj\Debug\MVC.dll
 C:\Users\Rachit\source\repos\WebAPI\MVC\obj\Debug\MVC.pdb
 C:\Users\Rachit\source\repos\WebAPI\MVC\bin\System.Net.Http.Formatting.dll
 C:\Users\Rachit\source\repos\WebAPI\MVC\bin\System.Net.Http.Formatting.xml
+C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\MVC.dll.config
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\MVC.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\MVC.pdb
@@ -86,7 +87,6 @@ C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\roslyn\csi.exe
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\roslyn\csi.exe.config
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\roslyn\csi.rsp
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
@@ -153,4 +153,3 @@ C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.csproj
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.csproj.CopyComplete
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.pdb
-C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\MVC\obj\Debug\MVC.csprojAssemblyReference.cache

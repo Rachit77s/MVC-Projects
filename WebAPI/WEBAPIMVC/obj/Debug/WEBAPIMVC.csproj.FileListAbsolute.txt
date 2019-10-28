@@ -185,4 +185,3 @@ C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\WEBAPIMVC\obj\Debug\WEBA
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\WEBAPIMVC\obj\Debug\WEBAPIMVC.csproj.CopyComplete
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\WEBAPIMVC\obj\Debug\WEBAPIMVC.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\WEBAPIMVC\obj\Debug\WEBAPIMVC.pdb
-C:\Users\Rachit\source\repos\Github-MVC-Projects\WebAPI\WEBAPIMVC\obj\Debug\WEBAPIMVC.csprojAssemblyReference.cache

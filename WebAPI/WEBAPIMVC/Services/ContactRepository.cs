@@ -54,18 +54,10 @@ namespace WEBAPIMVC.Services
 
         public void Update(Contact contact)
         {
-           
-            try
-            {
-                _context.Entry(contact).State = System.Data.Entity.EntityState.Modified;
-                _context.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                
-            }
 
-            //throw new NotImplementedException();
+            _context.Entry(contact).State = System.Data.Entity.EntityState.Modified;
+            _context.SaveChanges();
+
         }
     }
 }

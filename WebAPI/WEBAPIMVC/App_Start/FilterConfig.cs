@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using WEBAPIMVC.ErrorLog;
 
 namespace WEBAPIMVC
 {
@@ -8,6 +9,8 @@ namespace WEBAPIMVC
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            
+            
         }
     }
 }

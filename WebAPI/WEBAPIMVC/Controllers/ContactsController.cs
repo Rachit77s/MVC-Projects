@@ -8,11 +8,13 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using WEBAPIMVC.ErrorLog;
 using WEBAPIMVC.Models;
 using WEBAPIMVC.Services;
 
 namespace WEBAPIMVC.Controllers
 {
+    [LogCustomExceptionFilterAPI]
     public class ContactsController : ApiController
     {
         //private RachitTestEntities db = new RachitTestEntities();
@@ -20,10 +22,6 @@ namespace WEBAPIMVC.Controllers
             //For injecting dependency
         private readonly IContact _Icontact;
 
-        //public ContactsController()
-        //{
-            
-        //}
 
         public ContactsController(IContact Icontact)
         {
@@ -33,9 +31,9 @@ namespace WEBAPIMVC.Controllers
         // GET: api/Contacts
         public IEnumerable<Contact> GetContacts()
         {
-            //return db.Contacts;
+       
             return _Icontact.getAll();
-           //return View(a);
+        
         }
 
         // GET: api/Contacts/5
@@ -94,10 +92,6 @@ namespace WEBAPIMVC.Controllers
                 return BadRequest(ModelState);
             }
 
-            //db.Contacts.Add(contact);
-            //db.SaveChanges();
-
-
             _Icontact.Insert(contact);
 
             return CreatedAtRoute("DefaultApi", new { id = contact.Id }, contact);
@@ -107,25 +101,17 @@ namespace WEBAPIMVC.Controllers
         [ResponseType(typeof(Contact))]
         public IHttpActionResult DeleteContact(int id)
         {
-            Contact contact = _Icontact.getById(id);
-            if (contact == null)
-            {
-                return NotFound();
-            }
+            //Contact contact = _Icontact.getById(id);
+            //if (contact == null)
+            //{
+            //    return NotFound();
+            //}
 
             _Icontact.Delete(id);
 
-            return Ok(contact);
+            return Ok();
         }
 
-        //protected override void Dispose(bool disposing)
-        //{
-        //    if (disposing)
-        //    {
-        //        _Icontact.Dispose();
-        //    }
-        //    base.Dispose(disposing);
-        //}
 
         private bool ContactExists(int id)
         {

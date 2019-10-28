@@ -1,13 +1,16 @@
-﻿using MVC.Models;
+﻿using MVC.ErrorLog;
+using MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Mvc;
 
 namespace MVC.Controllers
 {
+    [LogCustomExceptionFilter]
     public class ContactsController : Controller
     {
         // GET: Contacts
@@ -15,9 +18,20 @@ namespace MVC.Controllers
         {
             IEnumerable<ContactModel> contactList;
             HttpResponseMessage response = GlobalVariables.WebApiClient.GetAsync("Contacts").Result;
-            contactList = response.Content.ReadAsAsync<IEnumerable<ContactModel>>().Result;
 
-            return View(contactList);
+            if (response.IsSuccessStatusCode)
+            {
+                contactList = response.Content.ReadAsAsync<IEnumerable<ContactModel>>().Result;
+                return View(contactList);
+            }
+
+            else
+            {
+                TempData["SuccessMessage"] = "No data found";
+                return View();
+            }
+
+            
         }
 
      
@@ -36,27 +50,38 @@ namespace MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                try
-                {
+                
                     HttpResponseMessage response = GlobalVariables.WebApiClient.PostAsJsonAsync("Contacts", contactModel).Result;
-                    TempData["SuccessMessage"] = "Saved Successfully";
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        TempData["SuccessMessage"] = "Saved Successfully";
+                    }
+                    
                     return RedirectToAction("Index");
-
-                }
-                catch (Exception ex)
-                {
-
-                    throw ex;
-                }
+               
             }
-            return RedirectToAction("Index");
+            else
+            {
+                TempData["SuccessMessage"] = "Please fill up the details correctly";
+                return View();
+            }
+            
         }
 
 
         public ActionResult Edit(int id)
         {
             HttpResponseMessage response = GlobalVariables.WebApiClient.GetAsync("Contacts/" + id.ToString()).Result;
-            return View(response.Content.ReadAsAsync<ContactModel>().Result);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return View(response.Content.ReadAsAsync<ContactModel>().Result);
+            }
+            else
+            {
+                return View();
+            }
         }
 
         // POST: ContactModels/Edit/5
@@ -69,26 +94,41 @@ namespace MVC.Controllers
             if (ModelState.IsValid)
             {
                 HttpResponseMessage response = GlobalVariables.WebApiClient.PutAsJsonAsync("Contacts/" + id.ToString(), contactModel).Result;
-                TempData["SuccessMessage"] = "Updated Successfully";
+     
+                if (response.IsSuccessStatusCode)
+                {
+                    TempData["SuccessMessage"] = "Updated Successfully";
+                }
             }
             else
             {
-
+                TempData["SuccessMessage"] = "Please fill up the details correctly";
+                return View();
             }
                
-
             return RedirectToAction("Index");
 
         }
 
 
 
+       
         public ActionResult Delete(int id)
         {
             HttpResponseMessage response = GlobalVariables.WebApiClient.DeleteAsync("Contacts/" + id.ToString()).Result;
-            TempData["SuccessMessage"] = "Deleted Successfully";
-            return RedirectToAction("Index");
 
+            if (response.IsSuccessStatusCode)
+            {
+                TempData["SuccessMessage"] = "Deleted Successfully";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                HttpResponseMessage errorMessage = new HttpResponseMessage(HttpStatusCode.NotModified);
+                TempData["SuccessMessage"] = errorMessage.ToString();
+                return View();
+            }
+            
         }
     }
 }
