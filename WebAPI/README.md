@@ -15,15 +15,17 @@ What things you need to install the software.
 A step by step series of examples that tell you how to get a development env running
 
 1. Open SSMS and create a database with name = RachitTest and execute the attached DB script *OR* else you can create your own DB and update DB name in the connection string.
+
 ```c#
 <connectionStrings>
-    <add name="RachitTestEntities" connectionString="metadata=res://*/Models.DBModels.csdl|res://*/Models.DBModels.ssdl|res://*/Models.DBModels.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=FIC-I7K40\MSSQLSRV2017STD;initial catalog=RachitTest;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="RachitTestEntities" connectionString="metadata=res://*/Models.DBModels.csdl|res://*/Models.DBModels.ssdl|res://*/Models.DBModels.msl;
+    provider=System.Data.SqlClient;provider connection string=&quot;data source=FIC-I7K40\MSSQLSRV2017STD;initial catalog=RachitTest;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
   </connectionStrings>
-```c#
+```
 
 ```c#
 initial catalog=RachitTest
-```c#
+```
 
 2. Open Visual Studio and under the WEBAPIMVC project, open the Web.config and change the connection string. For example, see below
 
@@ -31,11 +33,11 @@ initial catalog=RachitTest
 <connectionStrings>
     <add name="RachitTestEntities" connectionString="metadata=res://*/Models.DBModels.csdl|res://*/Models.DBModels.ssdl|res://*/Models.DBModels.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=FIC-I7K40\MSSQLSRV2017STD;initial catalog=RachitTest;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
   </connectionStrings>
-```c#
+```
 
 ```c#
 In the above connectionString, change the source=FIC-I7K40\MSSQLSRV2017STD to your own SQL Server DB instance name.
-```c#
+```
 
 3. Open Visual Studio and right-click on solution WebApi and click on properties. Now in the solution property, click on Multiple Startup Project and set both MVC and WebAPI projects as Start.
 
