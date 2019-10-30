@@ -1,6 +1,6 @@
 # Project Title
 
-* WebAPI ==> CRUD * operations using MVC and WEB API.Getting Started
+*WebAPI ==> CRUD* operations using MVC and WEB API.Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -42,7 +42,8 @@ In the above connectionString, change the source=FIC-I7K40\MSSQLSRV2017STD to yo
 
 3. Open Visual Studio and right-click on solution WebApi and click on properties. Now in the solution property, click on Multiple Startup Project and set both MVC and WebAPI projects as Start.
 
-![Reference Image](https://pasteboard.co/IEpysjE.jpg)
+### Reference Image
+![](extra/image.jpg)
 
 ## Features
 
