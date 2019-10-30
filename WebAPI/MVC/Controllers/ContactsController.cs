@@ -110,8 +110,6 @@ namespace MVC.Controllers
 
         }
 
-
-
        
         public ActionResult Delete(int id)
         {
