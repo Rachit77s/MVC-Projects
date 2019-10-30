@@ -8,7 +8,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software.
 
-..* Visual Studio 2015 onwards..* SQL Server 
+* Visual Studio 2015 onwards
+* SQL Server 
 
 ## Installing
 
@@ -41,18 +42,21 @@ In the above connectionString, change the source=FIC-I7K40\MSSQLSRV2017STD to yo
 
 3. Open Visual Studio and right-click on solution WebApi and click on properties. Now in the solution property, click on Multiple Startup Project and set both MVC and WebAPI projects as Start.
 
+![Reference Image](https://pasteboard.co/IEpysjE.jpg)
+
 ## Features
 
 Designed the project in MVC using Restful services using Entity Framework.
 
-[x] Implemented dependency injection using Unity Framework.
-[x] Implemented Repository design pattern.
-[x] Implemented Global Exception filter both in MVC and Web API.
-[x] Implemented Single Responsibility and the Open/Closed Principle.
-[x] Implemented basic CRUD operations.  
-[x] Implemented Model validations.  
+* [X] Implemented dependency injection using Unity Framework.
+* [X] Implemented Repository design pattern.
+* [X] Implemented Global Exception filter both in MVC and Web API.
+* [X] Implemented Single Responsibility and the Open/Closed Principle.
+* [X] Implemented basic CRUD operations.
+* [X] Implemented Model validations.  
 
-Built With
 
-ASP.NET MVC and WEB API - The web framework used
-Unity Framework - Dependency Management
+### Built With
+
+* ASP.NET MVC and WEB API - The web framework used
+* Unity Framework - Dependency Management
