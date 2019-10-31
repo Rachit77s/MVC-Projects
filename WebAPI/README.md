@@ -30,6 +30,7 @@ A step by step series of examples that tell you how to get a development env run
 initial catalog=RachitTest
 ```
 
+
 2. Open Visual Studio and under the WEBAPIMVC project, open the Web.config and change the connection string. For example, see below
 
 ```c#
@@ -42,6 +43,7 @@ initial catalog=RachitTest
 In the above connectionString, change the source=FIC-I7K40\MSSQLSRV2017STD to your own SQL Server DB instance name.
 ```
 
+
 3. Open Visual Studio and right-click on solution WebApi and click on properties. Now in the solution property, click on Multiple Startup Project and set both MVC and WebAPI projects as Start.
 
 ### Reference Image
@@ -51,7 +53,7 @@ In the above connectionString, change the source=FIC-I7K40\MSSQLSRV2017STD to yo
 
 Designed the project in MVC using Restful services using Entity Framework.
 
-* [X] Implemented dependency injection using Unity Framework.
+* [X] Implemented Dependency injection using Unity Framework.
 * [X] Implemented Repository design pattern.
 * [X] Implemented Global Exception filter both in MVC and Web API.
 * [X] Implemented Single Responsibility and the Open/Closed Principle.
