@@ -17,6 +17,8 @@ What things you need to install the software.
 
 A step by step series of examples that tell you how to get a development env running
 
+*Note -> Go to extras folder and execute script.sql on your database.
+
 1. Open SSMS and create a database with name = RachitTest and execute the attached DB script *OR* else you can create your own DB and update DB name in the connection string.
 
 ```c#
