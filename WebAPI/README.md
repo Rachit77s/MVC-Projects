@@ -1,6 +1,8 @@
 # Project Title
 
-*WebAPI ==> CRUD* operations using MVC and WEB API.Getting Started
+*WebAPI ==> CRUD* operations using MVC and WEB API.
+
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
