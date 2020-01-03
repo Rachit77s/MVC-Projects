@@ -19,6 +19,20 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthdate)
+        </dt>
+
+        <dd>
+            @if (!String.IsNullOrEmpty(Model.Birthdate.ToString()))
+            {
+                @Html.DisplayFor(model => model.Birthdate)
+            }
+            else
+            {
+                @Html.Display("Not available Birthdate")
+            }
+        </dd>
     </dl>
 </div>
 <p>

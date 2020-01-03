@@ -15,12 +15,18 @@ namespace Vidly_Dec_2019.Controllers
         {
             var movies = GetMovies();
 
+            // var movies = _context.Movies.Include(m => m.Genre).ToList();
+
             return View(movies);
         }
 
         public ActionResult Details(int id)
         {
             var customers = GetMovies().SingleOrDefault(m => m.Id == id);
+
+
+            //var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
+
             if (customers == null)
                 return HttpNotFound();
 
