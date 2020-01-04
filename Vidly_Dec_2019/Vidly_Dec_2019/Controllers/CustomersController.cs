@@ -4,17 +4,18 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly_Dec_2019.Models;
+using System.Data.Entity;
 
 namespace Vidly_Dec_2019.Controllers
 {
     public class CustomersController : Controller
     {
 
-        private ApplicationDbContext _context;
+        private VidlyEntities _context;
 
         public CustomersController()
         {
-            _context = new ApplicationDbContext();      
+            _context = new VidlyEntities();      
         }
 
         //Disposing the constructor 
@@ -27,17 +28,22 @@ namespace Vidly_Dec_2019.Controllers
         public ActionResult Index()
         {
             //var customers = GetCustomers();
-
-            var customers = _context.Customers.ToList();
-
-            return View(customers);
+            // var movies = _context.Movies.Include(m => m.Genre).ToList();
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+               return View(customers);
         }
 
-        public ActionResult Details(int id)
-        {
-            var customers = _context.Customers.SingleOrDefault(c => c.Id == id);
 
-            //var customers1 = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
+        public ActionResult New()
+        {
+            return View();
+        }
+
+            public ActionResult Details(int id)
+        {
+            //var customers = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            var customers = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
 
             if (customers == null)
                 return HttpNotFound();

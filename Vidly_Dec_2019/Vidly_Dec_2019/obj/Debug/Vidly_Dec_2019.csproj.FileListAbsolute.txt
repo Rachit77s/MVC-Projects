@@ -163,7 +163,6 @@ C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\b
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\Newtonsoft.Json.xml
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\Antlr3.Runtime.pdb
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\obj\Debug\Vidly_Dec_2019.csprojAssemblyReference.cache
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\obj\Debug\Vidly_Dec_2019.Migrations.InitialModel.resources
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\obj\Debug\Vidly_Dec_2019.csproj.GenerateResource.cache
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\obj\Debug\Vidly_Dec_2019.csproj.CopyComplete
