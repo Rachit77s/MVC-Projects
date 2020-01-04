@@ -150,6 +150,7 @@
       <DependentUpon>VidlyModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Extended\Customer.cs" />
+    <Compile Include="Models\Extended\MembershipType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MembershipType.cs">
       <DependentUpon>VidlyModel.tt</DependentUpon>
@@ -172,6 +173,7 @@
       <DependentUpon>VidlyModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CustomerViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

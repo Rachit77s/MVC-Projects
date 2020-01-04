@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly_Dec_2019.Models;
 using System.Data.Entity;
+using Vidly_Dec_2019.ViewModels;
 
 namespace Vidly_Dec_2019.Controllers
 {
@@ -36,10 +37,23 @@ namespace Vidly_Dec_2019.Controllers
 
         public ActionResult New()
         {
+            var memberShipTypes = _context.MembershipTypes.ToList();
+
+            var viewModel = new CustomerViewModel
+            {
+                MembershipTypes = memberShipTypes
+            };
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Create(CustomerViewModel viewModel)
+        {
+           
             return View();
         }
 
-            public ActionResult Details(int id)
+        public ActionResult Details(int id)
         {
             //var customers = _context.Customers.SingleOrDefault(c => c.Id == id);
 
