@@ -5,32 +5,113 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly_Dec_2019.Models;
 using Vidly_Dec_2019.ViewModels;
+using System.Data.Entity;
 
 namespace Vidly_Dec_2019.Controllers
 {
     public class MoviesController : Controller
     {
+        private VidlyEntitiesMovies _context;
+
+        public MoviesController()
+        {
+            _context = new VidlyEntitiesMovies();
+        }
 
         public ViewResult Index()
         {
-            var movies = GetMovies();
+            //var movies = GetMovies();
 
-            // var movies = _context.Movies.Include(m => m.Genre).ToList();
+             var movies = _context.Movies.Include(m => m.Genre).ToList();
 
             return View(movies);
         }
 
-        public ActionResult Details(int id)
+
+        [HttpGet]
+        public ActionResult Create()
         {
-            var customers = GetMovies().SingleOrDefault(m => m.Id == id);
+            
+            var genreList = _context.Genres.ToList();
+            var movieViewModel = new MovieViewModel
+            {
+                Movie = new Movy(),
+                Genres = genreList
+            };
+            return View("Create" , movieViewModel);        
+
+        }
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public ActionResult Create(Movy movie)
+        {
+            bool status = false;
+
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieViewModel
+                {
+                    Movie = movie,
+                    Genres = _context.Genres.ToList()
+                };
+                return View("Create", viewModel);
+            }
+                          
+                    //Edit the Movie
+             if (movie.Id > 0)
+             {
+                 //var v = _context.Movies.Where(m => m.Id == movie.Id).FirstOrDefault();
+                 var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
+                     if (movieInDb != null)
+                     {
+                 
+                         movieInDb.Name = movie.Name;
+                         movieInDb.GenreId = movie.GenreId;
+                         movieInDb.NumberInStock = movie.NumberInStock;
+                         movieInDb.ReleaseDate = movie.ReleaseDate;
+                      }
+             }
+             else
+             {
+             //Save
+                 _context.Movies.Add(movie);
+             }
+
+              _context.SaveChanges();
+               status = true;               
+            
+            return RedirectToAction("Index", "Movies");
+        }
 
 
-            //var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
 
-            if (customers == null)
+            if (movie == null)
                 return HttpNotFound();
 
-            return View(customers);
+            var movieViewModel = new MovieViewModel
+            {
+                Movie = movie,
+                Genres = _context.Genres.ToList()
+            };
+
+            return View("Create", movieViewModel);
+        }
+
+            public ActionResult Details(int id)
+        {
+            //var customers = GetMovies().SingleOrDefault(m => m.Id == id);
+
+
+            var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            return View(movie);
         }
 
 

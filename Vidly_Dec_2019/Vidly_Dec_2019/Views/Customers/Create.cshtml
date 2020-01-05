@@ -1,0 +1,60 @@
+﻿@model Vidly_Dec_2019.ViewModels.CustomerViewModel
+
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Customer</h2>
+
+
+@using (Html.BeginForm("Save", "Customers"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.Name)
+        @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.Name)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.MembershipTypeId)
+
+
+        @*Here the m => m.Customer.MembershipTypeId specifies dropdownlist is for MembershipTypeId property*@
+        @*Model.MembershipTypes is our ViewModel here*@
+        @*new SelectList(Model.MembershipTypes, "Id", "Name") specifies list of items for the dropdown list
+            Now in it the 1st argument contains list of items i.e. our Model class
+            Now in it the 2nd argument we need to specify the name of the property in MemberShipType class that holds the value for each item i.e. Id property and 3rd item is the property that holds the text for each item  *@
+        @*"Select Membership Type"  specifies argument which contains first drop down item*@
+        @Html.DropDownListFor(m => m.Customer.MembershipTypeId, new SelectList(Model.MembershipTypes, "Id", "Name"), "Select Membership Type", new { @class = "form-control" })
+
+        @Html.ValidationMessageFor(m => m.Customer.MembershipTypeId)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.BirthDate)
+        @Html.TextBoxFor(m => m.Customer.BirthDate, "{0:d MMM yyyy}", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.BirthDate)
+    </div>
+    @*<div class="form-group">
+            @Html.LabelFor(m => m.IsSubscribedToNewsletter)
+            @Html.CheckBoxFor(m => m.IsSubscribedToNewsletter, new { @class = "form-control" })
+        </div>*@
+
+
+    <div class="checkbox">
+        <label>
+            @Html.CheckBoxFor(m => m.Customer.IsSubscribedToNewsletter) Subscribed To Newsletter
+        </label>
+    </div>
+
+    @Html.HiddenFor(m => m.Customer.Id)
+
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-primary">Save</button>
+}
+
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}

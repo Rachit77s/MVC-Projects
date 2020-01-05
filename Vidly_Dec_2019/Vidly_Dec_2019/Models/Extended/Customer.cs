@@ -22,6 +22,7 @@ namespace Vidly_Dec_2019.Models
         public bool IsSubscribedToNewsletter { get; set; }
         
         [Display(Name = "Date of Birth")]
+        [Min18YearsIfAMember]
         public Nullable<System.DateTime> BirthDate { get; set; }
 
         [Display(Name = "Membership Type")]
