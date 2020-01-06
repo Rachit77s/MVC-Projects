@@ -46,7 +46,7 @@ namespace Vidly_Dec_2019.Controllers
         [HttpPost]
         public ActionResult Create(Movy movie)
         {
-            bool status = false;
+           // bool status = false;
 
             if (!ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace Vidly_Dec_2019.Controllers
              }
 
               _context.SaveChanges();
-               status = true;               
+               //status = true;               
             
             return RedirectToAction("Index", "Movies");
         }

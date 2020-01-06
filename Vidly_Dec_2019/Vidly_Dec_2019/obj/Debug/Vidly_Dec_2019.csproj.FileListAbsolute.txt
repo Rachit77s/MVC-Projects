@@ -168,3 +168,9 @@ C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\o
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\obj\Debug\Vidly_Dec_2019.csproj.CopyComplete
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\obj\Debug\Vidly_Dec_2019.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\obj\Debug\Vidly_Dec_2019.pdb
+C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\System.Net.Http.Formatting.dll
+C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\System.Web.Http.dll
+C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\System.Web.Http.WebHost.dll
+C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\System.Net.Http.Formatting.xml
+C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\System.Web.Http.xml
+C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\System.Web.Http.WebHost.xml
