@@ -19,14 +19,17 @@ namespace Vidly_Dec_2019.Controllers.Api
 
         //GET
         //api/customers
-        private IEnumerable<Customer> GetCustomers()
+        [HttpGet]
+        public IEnumerable<Customer> GetCustomers()
         {
+            //System.Diagnostics.Debugger.Break();
             return _context.Customers.ToList();
         }
 
         //GET
         //api/customers/1
-        private Customer GetCustomers(int id)
+        [HttpGet]
+        public Customer GetCustomers(int id)
         {
 
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
@@ -80,7 +83,7 @@ namespace Vidly_Dec_2019.Controllers.Api
         //DELETE
         //api/customers/1
         [HttpDelete]
-        private void DeleteCustomer(int id)
+        public void DeleteCustomer(int id)
         {
 
             var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == id);

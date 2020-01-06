@@ -18,6 +18,8 @@ namespace Vidly_Dec_2019.Models
         public VidlyEntities()
             : base("name=VidlyEntities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
+            this.Configuration.ProxyCreationEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
