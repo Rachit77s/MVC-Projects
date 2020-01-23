@@ -272,3 +272,6 @@ C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\b
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\System.Xml.XPath.XDocument.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\Json.Net.dll
 C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\obj\Debug\Vidly_Dec_2019.csprojAssemblyReference.cache
+C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\AutoMapper.dll
+C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\AutoMapper.pdb
+C:\Users\Rachit\source\repos\Github-MVC-Projects\Vidly_Dec_2019\Vidly_Dec_2019\bin\AutoMapper.xml
