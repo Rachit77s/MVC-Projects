@@ -16,7 +16,7 @@ namespace Vidly_Dec_2019.DTOS
         public string Name { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
             
-        [Min18YearsIfAMember]
+        //[Min18YearsIfAMember]
         public Nullable<System.DateTime> BirthDate { get; set; }
 
 
