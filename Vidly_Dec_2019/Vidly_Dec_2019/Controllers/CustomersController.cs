@@ -30,8 +30,9 @@ namespace Vidly_Dec_2019.Controllers
         {
             //var customers = GetCustomers();
             // var movies = _context.Movies.Include(m => m.Genre).ToList();
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
-               return View(customers);
+            //var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            //   return View(customers);
+            return View();
         }
 
         //Create a New customer 
