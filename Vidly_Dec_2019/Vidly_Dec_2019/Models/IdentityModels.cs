@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.Identity;
+﻿ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 using System.Security.Claims;
@@ -22,6 +22,8 @@ namespace Vidly_Dec_2019.Models
     {
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Movie> Movies { get; set; }
+
+        public DbSet<Rentals> Rentals { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
