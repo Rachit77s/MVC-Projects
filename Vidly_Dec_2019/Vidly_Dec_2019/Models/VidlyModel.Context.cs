@@ -29,5 +29,7 @@ namespace Vidly_Dec_2019.Models
     
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<MembershipType> MembershipTypes { get; set; }
+
+
     }
 }
