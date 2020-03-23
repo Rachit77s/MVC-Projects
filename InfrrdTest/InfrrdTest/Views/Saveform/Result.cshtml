@@ -1,0 +1,70 @@
+﻿@model IEnumerable<InfrrdTest.Models.SummaryModel>
+
+@{
+    ViewBag.Title = "Result";
+}
+
+<h2>Result</h2>
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+</p>
+
+<script type="text/javascript">
+        //$(document).ready(function () {
+            $('#tblEmployee').DataTable();
+        //});
+</script>
+
+<table id="tblEmployee" class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Before2018)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year2018)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year2019)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year2020)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.After2020)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Total)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Before2018)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year2018)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year2019)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year2020)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.After2020)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Total)
+        </td>
+    </tr>
+}
+
+</table>
