@@ -1,0 +1,175 @@
+﻿@model IEnumerable<DatatableCrud.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<br />
+
+<a class="btn btn-success" style="margin-bottom:30px" onclick="PopupForm('@Url.Action("AddorEdit", "Employee")')">Add new</a>
+
+<table id="employeeTable" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    @*<tbody>
+            <tr>
+                <td>Rachit Srivastava</td>
+                <td>Director</td>
+                <td>JPR</td>
+                <td>26</td>
+                <td>10000</td>
+            </tr>
+        </tbody>*@
+</table>
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+
+
+@section Scripts{
+
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+
+
+    <script>
+
+        var Popup, dataTable;
+
+        $(document).ready(function () {
+            //Pass the configuration setting into the DataTable
+            debugger;
+
+            //dataTable= $("employeeTable").DataTable({
+            //    "ajax": {
+            //        "url": "/Employee/GetData",
+            //        "type": "GET",
+            //        "datatype": "json"
+            //    },
+            //    "columns": [
+            //        { "data": "Name", "autoWidth": true },
+            //        { "data": "Position", "autoWidth": true },
+            //        { "data": "Office", "autoWidth": true },
+            //        { "data": "Age", "autoWidth": true },
+            //        { "data": "Salary", "autoWidth": true },
+            //    ],
+            //    "language": {
+            //        "emptyTable": "No data found "
+            //    }
+            //});
+
+            GetEmployeeRecord();  
+            
+
+
+        });
+
+        var GetEmployeeRecord = function () {
+            $.ajax({
+                url: '/Employee/GetData',
+                method: 'GET',
+                dataType: 'json',
+                //dataSrc: 'data',
+                success: function (data) {
+                    debugger;
+                    console.log(data.d);
+                    //var dataParsed = $.parseJSON(data);
+                    var dataJSON = JSON.stringify(data)
+                    //console.log(dataParsed);
+                    debugger;
+                    BindData(dataJSON);
+                }
+            });
+        }  
+
+        var BindData = function (response) {
+            dataTable = $('#employeeTable').dataTable({               
+                data: response,             
+                columns: [
+                    { "data": "Name", "autoWidth": true },
+                    { "data": "Position", "autoWidth": true },
+                    { "data": "Office", "autoWidth": true },
+                    { "data": "Age", "autoWidth": true },
+                    { "data": "Salary", "autoWidth": true }                    
+                ]
+            });
+        }  
+
+
+        function PopupForm(url) {
+            var formDiv = $('<div/>');
+            $.get(url)
+                //This response would contain AddorEdit.cshtml page
+                .done(function (response) {
+                    formDiv.html(response);
+                    //Now we will open this above div in jQuery UI popup
+                    Popup = formDiv.dialog({
+                        autoOpen: true,
+                        resizable: false,
+                        title: "Fill Form",
+                        height: 500,
+                        width: 700,
+                        close: function () {
+                            Popup.dialog('destroy').remove();
+                        }
+                    });
+                });
+        }
+
+         
+        function SubmitForm(form) {
+            $.validator.unobtrusive.parse(form);
+            debugger;
+            if ($(form).valid() ) {
+                $.ajax({
+                    url: form.action,
+                    type: "POST",
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        if (data.success == true) {
+                            Popup.dialog('close');
+                            dataTable.ajax.reload();
+                        }
+                    }
+                });
+            }           
+            return false; //In order to avoid default submit event 
+        }
+
+
+
+    </script>
+}
+
+
+
+
+
+
+
+
+
+        @*//$(document).ready(function () {
+        //    $("#employeeTable").dataTable();
+        //});*@
+
+
+
+
+@*//alert("inside document ready");
+    //try {
+    //    $('#users').dataTable({});
+    //    alert("inside dataTable");
+    //} catch (err) {
+    //    alert(err + ":\n Datatables installed?  Included in Resource bundle?");
+    //    alert("inside catch");
+    //}*@
