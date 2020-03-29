@@ -80,12 +80,8 @@
                 dataType: 'json',
                 //dataSrc: 'data',
                 success: function (data) {
-                    debugger;
-                    console.log(data.d);
-                    //var dataParsed = $.parseJSON(data);
-                    var dataJSON = JSON.stringify(data)
-                    //console.log(dataParsed);
-                    debugger;
+                    var dataJSON = data.data;
+                    //console.log(dataParsed);                    
                     BindData(dataJSON);
                 }
             });
