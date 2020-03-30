@@ -81,12 +81,12 @@
                 //dataSrc: 'data',
                 success: function (data) {
                     debugger;
-                    console.log(data.d);
+                    console.log(data.data);
                     //var dataParsed = $.parseJSON(data);
-                    var dataJSON = JSON.stringify(data)
+                    //var dataJSON = JSON.stringify(data)
                     //console.log(dataParsed);
                     debugger;
-                    BindData(dataJSON);
+                    BindData(data.data);
                 }
             });
         }  
