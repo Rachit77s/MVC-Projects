@@ -1,0 +1,11 @@
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\bin\Debug\netcoreapp2.1\FindCurrentDirection.deps.json
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\bin\Debug\netcoreapp2.1\FindCurrentDirection.runtimeconfig.json
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\bin\Debug\netcoreapp2.1\FindCurrentDirection.runtimeconfig.dev.json
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\bin\Debug\netcoreapp2.1\FindCurrentDirection.dll
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\bin\Debug\netcoreapp2.1\FindCurrentDirection.pdb
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\obj\Debug\netcoreapp2.1\FindCurrentDirection.csprojAssemblyReference.cache
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\obj\Debug\netcoreapp2.1\FindCurrentDirection.csproj.CoreCompileInputs.cache
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\obj\Debug\netcoreapp2.1\FindCurrentDirection.AssemblyInfoInputs.cache
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\obj\Debug\netcoreapp2.1\FindCurrentDirection.AssemblyInfo.cs
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\obj\Debug\netcoreapp2.1\FindCurrentDirection.dll
+C:\Users\rachit.srivastava\source\repos\FindCurrentDirection\FindCurrentDirection\obj\Debug\netcoreapp2.1\FindCurrentDirection.pdb
