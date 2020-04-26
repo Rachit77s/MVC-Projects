@@ -1,0 +1,10 @@
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\bin\Debug\ICMAPITEST.exe.config
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\bin\Debug\ICMAPITEST.exe
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\bin\Debug\ICMAPITEST.pdb
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\bin\Debug\Newtonsoft.Json.dll
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\bin\Debug\Newtonsoft.Json.xml
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\obj\Debug\ICMAPITEST.csprojAssemblyReference.cache
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\obj\Debug\ICMAPITEST.csproj.CoreCompileInputs.cache
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\obj\Debug\ICMAPITEST.csproj.CopyComplete
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\obj\Debug\ICMAPITEST.exe
+C:\TFS\DemoProjects\OktaOAuthPOC\ICMAPITEST\obj\Debug\ICMAPITEST.pdb
