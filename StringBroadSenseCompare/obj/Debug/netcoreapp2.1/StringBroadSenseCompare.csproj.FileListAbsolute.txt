@@ -1,0 +1,11 @@
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\bin\Debug\netcoreapp2.1\StringBroadSenseCompare.deps.json
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\bin\Debug\netcoreapp2.1\StringBroadSenseCompare.runtimeconfig.json
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\bin\Debug\netcoreapp2.1\StringBroadSenseCompare.runtimeconfig.dev.json
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\bin\Debug\netcoreapp2.1\StringBroadSenseCompare.dll
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\bin\Debug\netcoreapp2.1\StringBroadSenseCompare.pdb
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\obj\Debug\netcoreapp2.1\StringBroadSenseCompare.csprojAssemblyReference.cache
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\obj\Debug\netcoreapp2.1\StringBroadSenseCompare.csproj.CoreCompileInputs.cache
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\obj\Debug\netcoreapp2.1\StringBroadSenseCompare.AssemblyInfoInputs.cache
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\obj\Debug\netcoreapp2.1\StringBroadSenseCompare.AssemblyInfo.cs
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\obj\Debug\netcoreapp2.1\StringBroadSenseCompare.dll
+C:\Users\Rachit\source\repos\StringBroadSenseCompare\obj\Debug\netcoreapp2.1\StringBroadSenseCompare.pdb
