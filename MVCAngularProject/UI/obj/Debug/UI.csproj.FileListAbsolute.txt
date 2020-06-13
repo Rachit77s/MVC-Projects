@@ -1,0 +1,206 @@
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\UI.dll.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\UI.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\UI.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\csc.exe
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\csc.exe.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\csc.rsp
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\csi.exe
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\csi.exe.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\csi.rsp
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.AppContext.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Console.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.IO.Compression.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Security.Claims.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.ValueTuple.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\vbc.exe
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\vbc.exe.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\vbc.rsp
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\DomainModels.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Repository.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Helpers.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Mvc.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Razor.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Webpages.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Webpages.Razor.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\ApplicationCore.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\EntityFramework.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\DomainModels.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\DomainModels.dll.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Repository.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Repository.dll.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Razor.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Webpages.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Webpages.Razor.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Helpers.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\System.Web.Mvc.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\ApplicationCore.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\ApplicationCore.dll.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\EntityFramework.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\obj\Debug\UI.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\obj\Debug\UI.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\EntityFramework.SqlServer.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\EntityFramework.SqlServer.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Newtonsoft.Json.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Newtonsoft.Json.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\CommonServiceLocator.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Abstractions.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Configuration.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Container.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Interception.Configuration.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Interception.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Mvc5.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.RegistrationByConvention.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.ServiceLocation.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\CommonServiceLocator.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Abstractions.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Configuration.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Container.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Interception.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.Interception.Configuration.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.RegistrationByConvention.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\UI\bin\Unity.ServiceLocation.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\UI.dll.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\UI.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\UI.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\csc.exe
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\csc.exe.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\csc.rsp
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\csi.exe
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\csi.exe.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\csi.rsp
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.AppContext.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Console.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.IO.Compression.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Security.Claims.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.ValueTuple.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\vbc.exe
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\vbc.exe.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\vbc.rsp
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\CommonServiceLocator.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\DomainModels.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\EntityFramework.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\EntityFramework.SqlServer.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Newtonsoft.Json.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Repository.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Helpers.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Mvc.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Razor.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Webpages.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Webpages.Razor.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Abstractions.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Configuration.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Container.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Interception.Configuration.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Interception.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Mvc5.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.RegistrationByConvention.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.ServiceLocation.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\ApplicationCore.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\DomainModels.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\DomainModels.dll.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Repository.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Repository.dll.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\CommonServiceLocator.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\EntityFramework.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\EntityFramework.SqlServer.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Newtonsoft.Json.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Abstractions.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Configuration.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Container.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Interception.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.Interception.Configuration.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.RegistrationByConvention.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Unity.ServiceLocation.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Razor.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Webpages.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Webpages.Razor.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Helpers.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\System.Web.Mvc.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\ApplicationCore.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\bin\ApplicationCore.dll.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\obj\Debug\UI.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\UI\obj\Debug\UI.pdb

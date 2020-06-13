@@ -1,0 +1,36 @@
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\Repository.dll.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\Repository.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\Repository.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\ApplicationCore.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\DomainModels.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\EntityFramework.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\ApplicationCore.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\ApplicationCore.dll.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\DomainModels.pdb
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\DomainModels.dll.config
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\EntityFramework.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\obj\Debug\Repository.dll
+C:\Users\Shailendra Chauhan\Desktop\MVCAngularProject\Repository\obj\Debug\Repository.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\Repository.dll.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\Repository.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\Repository.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\ApplicationCore.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\DomainModels.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\EntityFramework.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\ApplicationCore.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\ApplicationCore.dll.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\DomainModels.pdb
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\DomainModels.dll.config
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\EntityFramework.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\obj\Debug\Repository.dll
+C:\Users\Rachit\Downloads\Video\MVCAngularProject\Repository\obj\Debug\Repository.pdb
