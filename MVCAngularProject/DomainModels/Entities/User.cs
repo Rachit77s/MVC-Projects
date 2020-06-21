@@ -13,6 +13,7 @@ namespace DomainModels.Entities
             CreatedDate = DateTime.Now;
             //HashSet will not accept duplicate values so when we are performing DB operations then there should be unique record.
             Roles = new HashSet<Role>();
+            Orders = new HashSet<Order>();
         }
         //[Key]
         public int UserId { get; set; }
@@ -48,5 +49,7 @@ namespace DomainModels.Entities
         //For defining mapping we need to define the navigation property on both the classes
         //Virtual keyword is used for Lazy Loading Concept
         public virtual ICollection<Role> Roles { get; set; }
+
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

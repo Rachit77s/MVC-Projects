@@ -10,6 +10,8 @@ using System.Web.Security;
 
 namespace UI.Controllers
 {
+
+    //Implementing DI using Inheritance BaseController
     public class AccountController : BaseController
     {
         // IUnitOfWork uow;

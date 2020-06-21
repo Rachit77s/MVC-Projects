@@ -30,13 +30,15 @@ namespace DomainModels.Entities
 
         //[Column(TypeName = "varchar")]
         [StringLength(250)]
-        [Required]
+        //[Required]
         public string ImageName { get; set; }
 
         //[Column(TypeName = "varchar")]
         [StringLength(500)]
-        [Required]
+        //[Required]
         public string ImagePath { get; set; }
+
+        public decimal UnitPrice { get; set; }
 
         //[ForeignKey("Category")]
         public int CategoryId { get; set; }

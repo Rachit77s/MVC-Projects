@@ -10,7 +10,17 @@ namespace UI.Controllers
 {
     public class BaseController : Controller
     {
+        //For DI
+        //Global var for all the Controllers
         protected IUnitOfWork uow;
+
+        //For DI
+        public BaseController(IUnitOfWork _uow)
+        {
+            uow = _uow;
+        }
+
+
         public CustomPrincipal CurrentUser
         {
             get
@@ -19,9 +29,6 @@ namespace UI.Controllers
             }
         }
 
-        public BaseController(IUnitOfWork _uow)
-        {
-            uow = _uow;
-        }
+       
     }
 }

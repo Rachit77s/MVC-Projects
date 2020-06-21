@@ -16,8 +16,9 @@ namespace Repository
     public interface IUnitOfWork
     {
         IAuthenticateRepository AuthenticateRepository { get; }
-        IRepository<Category> CategoryRepository { get; }
-        IRepository<Product> ProductRepository { get; }
+        ICategoryRepository CategoryRepository { get; }
+        IProductRepository ProductRepository { get; }
+        IOrderRepository OrderRepository { get; }
 
         int SaveChanges();
     }

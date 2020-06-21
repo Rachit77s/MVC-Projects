@@ -17,10 +17,12 @@ namespace Repository
     public class UnitOfWork : IUnitOfWork
     {
         DatabaseContext db;
+
         public UnitOfWork()
         {
             db = new DatabaseContext();
         }
+
         private IAuthenticateRepository _AuthenticateRepository;
         public IAuthenticateRepository AuthenticateRepository
         {
@@ -34,27 +36,42 @@ namespace Repository
             }
         }
         
-        private IRepository<Category> _CategoryRepository;
-        public IRepository<Category> CategoryRepository
+        private ICategoryRepository _CategoryRepository;
+        public ICategoryRepository CategoryRepository
         {
             get
             {
                 if (_CategoryRepository == null)
-                    _CategoryRepository = new Repository<Category>(db);
+                    _CategoryRepository = new CategoryRepository(db);
                 return _CategoryRepository;
             }
         }
 
-        private IRepository<Product> _ProductRepository;
-        public IRepository<Product> ProductRepository
+
+        private IProductRepository _ProductRepository;
+        public IProductRepository ProductRepository
         {
             get
             {
                 if (_ProductRepository == null)
-                    _ProductRepository = new Repository<Product>(db);
+                    _ProductRepository = new ProductRepository(db);
                 return _ProductRepository;
             }
         }
+
+        private IOrderRepository _OrderRepository;
+        public IOrderRepository OrderRepository
+        {
+            get
+            {
+                if (_OrderRepository == null)
+                    _OrderRepository = new OrderRepository(db);
+
+                return _OrderRepository;
+            }
+        }
+
+
 
         public int SaveChanges()
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,6 +18,16 @@ namespace UI.Areas.Admin.Controllers
             {
                 return HttpContext.User as CustomPrincipal;
             }
+        }
+
+        //For DI
+        //Global var for all the Controllers
+        protected IUnitOfWork uow;
+
+        //For DI
+        public BaseController(IUnitOfWork _uow)
+        {
+            uow = _uow;
         }
     }
 }

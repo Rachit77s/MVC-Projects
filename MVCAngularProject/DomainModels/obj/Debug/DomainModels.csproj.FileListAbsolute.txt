@@ -22,3 +22,15 @@ C:\Users\Rachit\Downloads\Video\MVCAngularProject\DomainModels\obj\Debug\DomainM
 C:\Users\Rachit\Downloads\Video\MVCAngularProject\DomainModels\obj\Debug\DomainModels.csproj.CopyComplete
 C:\Users\Rachit\Downloads\Video\MVCAngularProject\DomainModels\obj\Debug\DomainModels.dll
 C:\Users\Rachit\Downloads\Video\MVCAngularProject\DomainModels\obj\Debug\DomainModels.pdb
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\bin\Debug\DomainModels.dll.config
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\bin\Debug\DomainModels.dll
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\bin\Debug\DomainModels.pdb
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\bin\Debug\EntityFramework.dll
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\bin\Debug\EntityFramework.xml
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\obj\Debug\DomainModels.csprojAssemblyReference.cache
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\obj\Debug\DomainModels.csproj.CoreCompileInputs.cache
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\obj\Debug\DomainModels.csproj.CopyComplete
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\obj\Debug\DomainModels.dll
+C:\Users\Rachit\source\repos\Github-MVC-Projects\MVCAngularProject\DomainModels\obj\Debug\DomainModels.pdb

@@ -21,16 +21,12 @@ namespace Repository.Implementation
                 return db as DatabaseContext;
             }
         }
-        public AuthenticateRepository(DbContext _db): base(_db)
+        public AuthenticateRepository(DbContext _db)//: base(_db)
         {
-
+            this.db = _db;
         }
         public UserViewModel ValidateUser(LoginViewModel model)
         {
-            User data1 = context.Users.FirstOrDefault();
-
-            var data2 = context.Roles.FirstOrDefault();
-
             //Included Eager Loading
             User data = context.Users.Include("Roles").Where(u => u.Username == model.Username && u.Password == model.Password).FirstOrDefault();
 

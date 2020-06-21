@@ -1,0 +1,72 @@
+﻿@model DomainModels.ViewModels.ReceiptModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PaymentStatus</title>
+    <title>@ViewData["Message"]</title>
+</head>
+<body>
+    <div>
+        <h4>@ViewData["Message"]</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.TransactionId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TransactionId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Amount)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Amount)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PaymentType)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PaymentType)
+            </dd>
+    
+        </dl>
+    </div>
+
+</body>
+</html>

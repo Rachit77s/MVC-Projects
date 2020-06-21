@@ -48,8 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstraction\IAuthenticateRepository.cs" />
+    <Compile Include="Abstraction\ICategoryRepository.cs" />
+    <Compile Include="Abstraction\IOrderRepository.cs" />
+    <Compile Include="Abstraction\IProductRepository.cs" />
     <Compile Include="Abstraction\IRepository.cs" />
     <Compile Include="Implementation\AuthenticateRepository.cs" />
+    <Compile Include="Implementation\CategoryRepository.cs" />
+    <Compile Include="Implementation\OrderRepository.cs" />
+    <Compile Include="Implementation\ProductRepository.cs" />
     <Compile Include="Implementation\Repository.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

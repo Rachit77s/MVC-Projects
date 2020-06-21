@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,7 +9,11 @@ namespace UI.Areas.Admin.Controllers
 {
     public class HomeController : BaseController
     {
-        // GET: Admin/Home
+        public HomeController(IUnitOfWork _uow) : base(_uow)
+        {
+                
+        }
+
         public ActionResult Index()
         {
             return View();

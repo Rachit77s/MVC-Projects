@@ -20,6 +20,15 @@
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        @Html.ActionLink("Categories", "Index", "Category")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Products", "Index", "Product")
+                    </li>
+                </ul>
+
                 @if (CurrentUser != null)
                 {
                     <ul class="nav navbar-nav pull-right">

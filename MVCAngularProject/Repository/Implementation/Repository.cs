@@ -10,11 +10,11 @@ namespace Repository.Implementation
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected DbContext db;
-        public Repository(DbContext _db)
-        {
-            db = _db;
-        }
+        protected DbContext db { get; set; }
+        //public Repository(DbContext _db)
+        //{
+        //    db = _db;
+        //}
         public void Add(TEntity entity)
         {
             db.Set<TEntity>().Add(entity);
