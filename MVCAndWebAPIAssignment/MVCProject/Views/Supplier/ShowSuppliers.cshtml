@@ -1,0 +1,159 @@
+﻿@model IEnumerable<DamcoEvaluation.Models.SupplierRateModel>
+
+@{
+    ViewBag.Title = "ShowSuppliers";
+}
+
+<h2>ShowSuppliers Page</h2>
+
+
+<br />
+
+<h7>Enter Supplier Number</h7>
+<br />
+<input type="number" min="0" max="10" id="supplierNumberInput" placeholder="Supply" />
+<br/>
+<br />
+<button id="submit" class="btn btn-primary btn-xs">Synchronous Call</button>
+<button id="submitAsync" class="btn btn-primary btn-xs">ASynchronous Call</button>
+<div id="dataDiv"></div>
+
+
+<br />
+<br />
+
+
+
+<table id="tblSupplierTable" class="table table-bordered table-striped table-responsive table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SupplierNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+            @*<th></th>*@
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+
+
+
+
+
+
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+
+        $(document).ready(function () {
+            $("#submit").click(function (e) {
+                e.preventDefault();
+                $("#tblSupplierTable tbody tr").remove();
+                var id = parseInt($("#supplierNumberInput").val());
+
+                $.ajax({
+                    type: "GET",
+                    async: false,
+                    url: "/Supplier/GetSuppliersData",
+                    dataType: 'json',
+                    success: function (data, status, xhr) {
+                        LoadData(data)
+                    },
+                    error: function (xhr, status, error) {
+                        console.log("Message:" + error);
+                        //$("#dataDiv").html("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
+                    }
+                });
+
+            });
+
+
+            $("#submitAsync").click(function (e) {
+                e.preventDefault();
+                $("#tblSupplierTable tbody tr").remove();
+                var id = parseInt($("#supplierNumberInput").val());
+
+                $.ajax({
+                    type: "GET",
+                    async: true,
+                    url: "/Supplier/GetSuppliersDataAsync",
+                    dataType: 'json',
+                    data: { "Id": id }, //'{"userName":"' + $("#usernameInput").val() + '","password":"' + $("#passwordInput").val() + '"}',
+                    success: function (data, status, xhr) {
+                        if (typeof data != "undefined" && data != "" && data != null) {
+                            LoadData(data)
+                        }   
+                        else {
+                            var rows = "<tr>"
+                                + "<td class='prtoducttd'>" + "No data available for the given Supplier Number " + "</td>"
+                                + "</tr>";
+                            $('#tblSupplierTable tbody').append(rows);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.log("Message:" + error);
+                        //$("#dataDiv").html("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
+                    }
+                });
+
+            });
+        });
+
+
+        function LoadData(data) {
+            if (typeof data != "undefined" && data != "" && data != null) {
+
+                var items = '';
+                $.each(data, function (i, item) {
+
+                    var valueStartDate = new Date(parseInt(item.StartDate.replace("/Date(", "").replace(")/", ""), 10));
+                    if (item.EndDate != null) {
+                        var valueEndDate = new Date(parseInt(item.EndDate.replace("/Date(", "").replace(")/", ""), 10));
+                    }
+
+
+                    var StartDate = formatDate(valueStartDate);
+                    var EndDate = formatDate(valueEndDate);
+
+                    function formatDate(date) {
+                        if (typeof date != "undefined") {
+                            var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                            var day = date.getDate();
+                            var year = date.getFullYear();
+                            var month = months[date.getMonth()];
+                            return day + " " + month + " " + year;
+                        }
+                    }
+
+                    EndDate = typeof EndDate === "undefined" ? null : EndDate;
+
+                    var rows = "<tr>"
+                        + "<td class='prtoducttd'>" + item.SupplierNumber + "</td>"
+                        + "<td class='prtoducttd'>" + item.Rate + "</td>"
+                        + "<td class='prtoducttd'>" + StartDate + "</td>"
+                        + "<td class='prtoducttd'>" + EndDate + "</td>"
+                        //+ "<td class='prtoducttd'>" + item.UnitsInStock + "</td>"
+                        //+ "<td class='prtoducttd'>" + item.ReorderLevel + "</td>"
+                        + "</tr>";
+                    $('#tblSupplierTable tbody').append(rows);
+                });
+            }
+        }
+
+
+    </script>
+
+}
